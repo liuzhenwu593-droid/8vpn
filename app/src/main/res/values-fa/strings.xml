@@ -61,6 +61,7 @@
     <string name="sec_advanced">پیشرفته</string>
 
     <string name="language">زبان</string>
+    <string name="language_system">سیستم</string>
     <string name="theme">تم</string>
     <string name="theme_system">سیستم</string>
     <string name="theme_dark">تاریک</string>

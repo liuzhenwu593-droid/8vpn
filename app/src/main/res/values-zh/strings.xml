@@ -66,6 +66,7 @@
     <string name="sec_advanced">高级</string>
 
     <string name="language">语言</string>
+    <string name="language_system">跟随系统</string>
     <string name="theme">主题</string>
     <string name="theme_system">跟随系统</string>
     <string name="theme_dark">深色</string>

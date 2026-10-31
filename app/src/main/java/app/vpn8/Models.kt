@@ -37,7 +37,7 @@ enum class Protocol(val label: String) {
 }
 
 data class Settings(
-    val language: String = "en",
+    val language: String = "system", // "system" = follow the system language; en/fa/zh = manual choice
     val theme: String = "dark",
     val dynamicColor: Boolean = false,
     val vpnMode: Boolean = true,
@@ -214,7 +214,7 @@ object SettingsStore {
         val d = Settings()
         fun str(k: String, def: String) = prefs.getString(k, def) ?: def
         return Settings(
-            language = str("language", d.language),
+            language = str("language", d.language).takeIf { it in setOf("en", "fa", "zh", "system") } ?: d.language,
             theme = str("theme", d.theme),
             dynamicColor = prefs.getBoolean("dynamicColor", d.dynamicColor),
             vpnMode = prefs.getBoolean("vpnMode", d.vpnMode),
