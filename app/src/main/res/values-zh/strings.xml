@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">8 VPN</string>
+    <string name="core_aether" translatable="false">Aether</string>
+    <string name="core_psiphon" translatable="false">Psiphon only</string>
+    <string name="core_tor" translatable="false">Tor only</string>
+
+    <string name="disconnected">未连接</string>
+    <string name="connecting">连接中…</string>
+    <string name="connected">已连接</string>
+    <string name="reconnecting">重新连接中…</string>
+    <string name="stopping">断开连接中…</string>
+    <string name="attempt_of">第 %1$d 次尝试（共 %2$d 次）</string>
+    <string name="tap_to_connect">点按连接</string>
+    <string name="connect_failed">连接失败，请查看日志。</string>
+    <string name="vpn_iface_failed">无法创建 VPN 接口。</string>
+    <string name="disconnect">断开连接</string>
+
+    <string name="ping">延迟</string>
+    <string name="battery_row_ok">电池权限：已允许</string>
+    <string name="battery_row_ask">电池权限：点按允许</string>
+    <string name="battery_already">已允许，无需操作。</string>
+    <string name="ping_test">延迟测试</string>
+    <string name="ping_testing">测试中…</string>
+    <string name="tun_engine">VPN 引擎（VPN 模式）</string>
+    <string name="rescan">重新扫描</string>
+    <string name="vpn_stop">停止</string>
+    <string name="vpn_start">启动</string>
+    <string name="vpn_paused">VPN 已暂停</string>
+    <string name="paused_hint">VPN 已关闭，但核心仍在运行。点按“启动”可立即恢复。</string>
+    <string name="link_speed">链路速度</string>
+    <string name="ping_failed">无响应</string>
+    <string name="download">下载</string>
+    <string name="upload">上传</string>
+    <string name="protocol">协议</string>
+    <string name="exit_ip">出口 IP</string>
+    <string name="ms_fmt">%1$d 毫秒</string>
+    <string name="proxy_info">SOCKS5 %1$s</string>
+    <string name="http_info">HTTP %1$s</string>
+
+    <string name="logs">日志</string>
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+    <string name="back">返回</string>
+    <string name="no_logs">暂无日志。</string>
+
+    <string name="route">路由</string>
+    <string name="transport">传输方式</string>
+    <string name="region">Psiphon 地区</string>
+    <string name="region_auto">自动</string>
+    <string name="psiphon_mode">Psiphon 模式</string>
+    <string name="bridges">Tor 网桥</string>
+    <string name="bridges_auto">自动</string>
+    <string name="bridges_always">始终使用</string>
+    <string name="bridges_never">从不使用</string>
+    <string name="search">搜索</string>
+    <string name="mode_vpn">VPN</string>
+    <string name="mode_proxy">仅代理</string>
+    <string name="locked_hint">请先断开连接再修改这些选项。</string>
+
+    <string name="sec_general">通用</string>
+    <string name="sec_core">核心与协议</string>
+    <string name="sec_routing">路由</string>
+    <string name="sec_psiphon">Psiphon</string>
+    <string name="sec_tor">Tor</string>
+    <string name="sec_advanced">高级</string>
+
+    <string name="language">语言</string>
+    <string name="theme">主题</string>
+    <string name="theme_system">跟随系统</string>
+    <string name="theme_dark">深色</string>
+    <string name="theme_light">浅色</string>
+    <string name="dynamic_color">动态取色（Android 12+）</string>
+    <string name="default_mode">默认连接模式</string>
+    <string name="auto_start">开机自启</string>
+    <string name="keep_awake">连接时保持 CPU 唤醒</string>
+    <string name="split_tunnel">分应用代理</string>
+    <string name="split_off">关闭</string>
+    <string name="split_include">仅选定应用</string>
+    <string name="split_exclude">除选定应用外全部</string>
+    <string name="split_summary">已选 %1$d 个应用</string>
+    <string name="scan_level">扫描级别</string>
+    <string name="noize">混淆配置</string>
+    <string name="noize_default">默认</string>
+    <string name="ip_version">IP 版本</string>
+    <string name="fresh_after_drop">掉线后扫描新网关（推荐）</string>
+    <string name="perf_profile">Aether 性能配置</string>
+    <string name="extra_args">额外 Aether 参数</string>
+    <string name="extra_args_hint">例如 --fragment --no-quic-v2</string>
+    <string name="port_busy">端口 %1$d 已被占用，请在设置中修改。</string>
+    <string name="ping_fails">连续失败多少次 ping 后重连（默认 3）</string>
+    <string name="ping_interval">ping 间隔秒数（默认 5）</string>
+    <string name="tun_mtu">TUN MTU，1280-9000（默认 1500）</string>
+    <string name="tcp_buffer">TCP 缓冲，KB，16-4096（默认 256）</string>
+    <string name="tunnel_note">MTU 和 TCP 缓冲在下次连接时生效。除非网络有特殊要求，否则保持默认。</string>
+    <string name="last_drop">上次掉线：%1$s</string>
+    <string name="reason_pings">连续 %1$d 次 ping 失败</string>
+    <string name="reason_core">核心已停止运行</string>
+    <string name="reason_network">网络已切换（Wi-Fi / 移动数据）</string>
+    <string name="reason_rescan">已请求重新扫描</string>
+    <string name="reason_start">连接失败（第 %1$d 次尝试）</string>
+    <string name="max_tries">放弃前尝试连接次数（默认 3）</string>
+    <string name="retry_delay">尝试间隔，毫秒（默认 500）</string>
+    <string name="quick_reconnect">快速重连到上次网关</string>
+    <string name="upstream">上游代理</string>
+    <string name="upstream_hint">socks5://主机:端口 或 http://主机:端口</string>
+    <string name="route_block">拦截列表</string>
+    <string name="route_direct">直连列表</string>
+    <string name="route_hint">以逗号分隔：域名、IP、CIDR、port:25、private</string>
+    <string name="dns">自定义 DNS（隧道内）</string>
+    <string name="dns_hint">1.1.1.1,1.0.0.1</string>
+    <string name="socks_port">本地 SOCKS5 端口</string>
+    <string name="http_proxy">本地 HTTP 代理</string>
+    <string name="http_port">HTTP 代理端口</string>
+    <string name="clear_cache">清除缓存和 WARP 身份</string>
+    <string name="clear_cache_warn">这将删除已保存的 WARP 身份和全部缓存。下次连接时会注册一个新设备。</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="cleared">已清除</string>
+    <string name="restart_note">修改在下次连接时生效。</string>
+    <string name="open_logs">诊断日志</string>
+
+    <string name="copy">复制</string>
+    <string name="share">分享</string>
+    <string name="clear">清空</string>
+    <string name="copied">已复制</string>
+
+    <string name="app_version">应用版本</string>
+    <string name="core_version">Aether 核心版本</string>
+    <string name="tunnel_version">hev-socks5-tunnel 版本</string>
+    <string name="github">GitHub</string>
+    <string name="telegram">Telegram 频道</string>
+    <string name="license_title">许可与致谢</string>
+    <string name="license_text">8 VPN 是根据 GNU AGPL-3.0 发布的自由软件。\n\n它基于 CluvexStudio 的 Aether（AGPL-3.0）、heiher 的 hev-socks5-tunnel（MIT）、Psiphon 隧道核心和 Tor 可插拔传输 Lyrebird。感谢所有这些项目。</string>
+
+    <string name="notif_channel">VPN 状态</string>
+    <string name="endpoint">自定义节点</string>
+    <string name="endpoint_outer">自定义节点（外层）</string>
+    <string name="endpoint_inner">自定义节点（内层）</string>
+    <string name="endpoint_hint">IP:端口，例如 162.159.192.1:2408</string>
+    <string name="endpoint_note">留空则自动扫描。设置后将跳过扫描，直接使用该网关。</string>
+    <string name="endpoint_invalid">无效的节点。请使用 IP:端口（IPv6 用 [地址]:端口）。无效值会被忽略。</string>
+    <string name="update_open_github">打开 GitHub 下载页</string>
+    <string name="update_check">检查更新</string>
+    <string name="update_tap">点按检查 GitHub 是否有新版本</string>
+    <string name="update_checking">检查中…</string>
+    <string name="update_latest">已是最新版本</string>
+    <string name="update_failed">检查失败，请检查网络连接后重试</string>
+    <string name="update_available">新版本 %1$s 已发布</string>
+    <string name="sec_ports">本地代理端口</string>
+    <string name="port_invalid">请使用 1024 到 65535 之间的空闲端口（1820 和 1821 已保留，两个端口必须不同）</string>
+    <string name="ports_note">手机上的其他应用使用 127.0.0.1 和这些端口。新端口在下次连接时生效。</string>
+    <string name="sec_lan">代理端口与共享</string>
+    <string name="lan_share">允许其他设备使用代理</string>
+    <string name="lan_addr">%1$s：SOCKS5 %2$s</string>
+    <string name="lan_addr_http">HTTP 代理 %1$s</string>
+    <string name="lan_no_ip">暂未找到热点或 USB 共享地址。请先开启热点或 USB 共享，然后重新打开此页面。</string>
+    <string name="lan_howto">在笔记本上使用代理：开启手机热点（或 USB 共享），让笔记本连上，然后把它的代理设为上方地址。0.0.0.0 表示手机的全部网络；具体 IP 仅在该网络开启时有效。修改在下次连接时生效。SOCKS5 始终在运行，因为应用本身就要用它；这个开关只决定谁能连进来。使用 Aether → Psiphon 或 Aether → Tor 时，共享的 SOCKS5 端口是 Psiphon（1821）或 Tor（1820）那个。</string>
+    <string name="lan_warn">同一热点或 Wi-Fi 网络下的任何人都可以使用该代理。请设置强度高的热点密码，用完后关闭此开关。</string>
+    <string name="socks_share">与其他设备共享 SOCKS5</string>
+    <string name="socks_addr">SOCKS5 监听地址</string>
+    <string name="http_share">与其他设备共享 HTTP 代理</string>
+    <string name="http_addr">HTTP 代理监听地址</string>
+    <string name="addr_invalid">请输入 IPv4 地址，例如 0.0.0.0（全部网络）或 192.168.43.1。无效文本会被视为 0.0.0.0。</string>
+</resources>
