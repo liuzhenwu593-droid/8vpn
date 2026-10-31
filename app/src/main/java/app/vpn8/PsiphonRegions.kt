@@ -11,5 +11,11 @@ object PsiphonRegions {
     fun flag(cc: String): String =
         cc.uppercase().map { String(Character.toChars(0x1F1E6 + (it - 'A'))) }.joinToString("")
 
-    fun name(cc: String, lang: String): String = Locale("", cc).getDisplayCountry(Locale(lang)).ifBlank { cc }
+    fun name(cc: String, lang: String): String {
+        // "system" means the effective language already set as the default by LocaleHelper.wrap().
+        val effective = if (lang == "system") {
+            when (Locale.getDefault().language) { "zh" -> "zh"; "fa" -> "fa"; else -> "en" }
+        } else lang
+        return Locale("", cc).getDisplayCountry(Locale(effective)).ifBlank { cc }
+    }
 }

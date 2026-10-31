@@ -66,6 +66,7 @@
     <string name="sec_advanced">Advanced</string>
 
     <string name="language">Language</string>
+    <string name="language_system">System</string>
     <string name="theme">Theme</string>
     <string name="theme_system">System</string>
     <string name="theme_dark">Dark</string>

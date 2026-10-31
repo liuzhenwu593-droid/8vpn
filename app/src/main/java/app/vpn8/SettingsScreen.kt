@@ -50,7 +50,7 @@ fun SettingsScreen(
             // ---- General
             Group(stringResource(R.string.sec_general)) {
                 Field(stringResource(R.string.language)) {
-                    Chips(listOf("en" to "English", "fa" to "فارسی", "zh" to "中文"), s.language) { v ->
+                    Chips(listOf("system" to stringResource(R.string.language_system), "en" to "English", "fa" to "فارسی", "zh" to "中文"), s.language) { v ->
                         if (v != s.language) { up { it.copy(language = v) }; onLanguageChanged() }
                     }
                 }
